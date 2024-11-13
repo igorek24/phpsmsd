@@ -1,0 +1,17 @@
+[gammu]
+device = /dev/ttyUSB0
+name = Bob
+connection = at
+logfile = /var/log/gammu.log
+
+[smsd]
+service = files
+logfile = syslog
+#PIN = 1234
+# Increase for debugging information
+debuglevel = 0
+# Paths where messages are stored
+inboxpath = /var/spool/gammu/inbox/
+outboxpath = /var/spool/gammu/outbox/
+sentsmspath = /var/spool/gammu/sent/
+errorsmspath = /var/spool/gammu/error/

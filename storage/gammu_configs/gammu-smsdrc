@@ -1,0 +1,23 @@
+[gammu]
+device = /dev/ttyUSB0
+name = T-Mobile
+connection = at
+
+
+[smsd]
+service = sql
+driver = native_mysql
+host = localhost
+user = smsd
+password = password
+database = smsd
+
+maxretries = 3
+commtimeout = 2
+receivefrequency = 2
+sendtimeout = 2
+
+logfile = syslog
+debuglevel = 0
+logfile = /var/log/gammu.log
+

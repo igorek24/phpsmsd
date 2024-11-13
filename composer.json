@@ -1,0 +1,44 @@
+{
+  "authors": [
+    {
+      "name": "Igor Kuznetsov",
+      "email": "igor@oczmail.com",
+      "homepage": "https://igorkuz.com",
+      "role": "Developer"
+    }
+  ],
+  "description": "phpSMS is php based api for gammu-sms. Send and receive SMS messages using LTE modem with gammu as a backend.",
+  "homepage": "http://phpsms.org",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "name": "igorkuz/phpsmsd",
+  "non-feature-branches": [
+    "Latest-*"
+  ],
+  "config": {
+    "process-timeout": 0,
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "vendor-dir": "src/libs"
+  },
+  "require": {
+    "ext-openssl": "*",
+    "monolog/monolog": "^3.3",
+    "php-di/php-di": "^7.0",
+    "slim/psr7": "^1.6",
+    "slim/slim": "^4.11",
+    "slim/twig-view": "^2.5",
+    "symfony/console": "^6.3",
+    "symfony/polyfill-uuid": "^1.27",
+    "thingengineer/mysqli-database-class": "dev-master",
+    "vlucas/phpdotenv": "^5.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    },
+    "files": [
+      "src/helper_functions.php"
+    ]
+  }
+}
